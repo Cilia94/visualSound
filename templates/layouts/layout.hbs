@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <script>
+        WebFontConfig = {
+            custom: {
+                families: ['Mayonaise'],
+                urls: ['assets/fonts/webfontkit-20151215-194105/stylesheet.css']
+            }
+        };
+
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';
+            wf.src = 'js/webfontloader/webfontloader.js';
+            wf.type = 'text/javascript';
+            //script inladen, terwijl pagina renderen. (niet eerst inladen)
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+	<meta charset="UTF-8">
+
+	<title>{{title}}</title>
+
+  {{{_sections.head}}}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+ {{!--  <link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'> --}}
+
+   <link href="js/jquery-ui/jquery-ui.css" rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+</head>
+<body>
+
+  {{{content}}}
+
+  {{{_sections.scripts}}}
+</body>
+</html>

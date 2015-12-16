@@ -1,0 +1,281 @@
+@import 'mixins';
+@import 'reset';
+
+body {
+  font-size: 62.5%;
+  font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden; 
+  padding-top: 50px;
+}
+
+#sliders{
+  margin-top: 48px;
+  max-height: 550px;
+  overflow-y: scroll; 
+
+
+}
+
+#mic{
+  fill: #E6E6E6;
+  transition: fill 0.5s;
+  display: block;
+  //height: 70px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover{
+    fill: #9D9D9D;
+  }
+}
+
+.allDirections{
+  margin-left: 200px;
+  //margin-top: -30px;
+}
+.activeDirection{
+  color:red;
+  fill:red;
+}
+
+.up{
+  //position: absolute;
+  //margin-top: 80px;
+}
+
+.down{
+  //position: absolute;
+  //margin-top: 120px;
+}
+
+.right {
+  //position: absolute;
+  margin-left: 20px;
+}
+.downlList{
+  
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  //display: block;
+  //color: red;
+
+  h2{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .saveItem{
+
+    font-size: 0.75em;
+    margin-bottom: 10px;
+
+  }
+
+  .saveIcon{
+    float: right;
+    //font-size: 1.5em;
+  }
+}
+
+.audioInfo{
+  font-style: italic;
+  font-size: 0.75em;
+  display: block;
+  text-align: center;
+  //width: 250px;
+  //margin-left: auto;
+  //margin-right: auto;
+  padding: 15px;
+}
+
+.choose{
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  padding: 3px;
+}
+
+.chooseSection{
+width: 49%;
+margin: none;
+padding: none;
+text-align: center;
+background-color:white;
+display: inline-block;
+
+transition: background-color 0.5s;
+
+&:hover{
+  background-color: #E6E6E6;
+}
+//border: solid black 0.3px;
+}
+
+.activeSection{
+  //color: red;
+  background-color: #E6E6E6;
+}
+
+
+.addButtons{
+  margin-left: 15px;
+  //background-color: 
+  //margin-right: auto;
+  //padding: 10px;
+
+
+}
+
+
+
+.addCollection{
+  width: 130px;
+}
+
+.muteButton{
+  float: right;
+  margin-right: 10px;
+  color: #9D9D9D;
+  transition: color 0.5s;
+
+  &:hover{
+    color: #333333;
+  }
+}
+
+.muteButtonActive{
+  color: #F64D4A;
+
+}
+
+.jscolor{
+  width: 50px;
+  float: right;
+  margin-right: 10px;
+  font-size: 0.75em;
+}
+
+.wrapParams{
+  background-color:#F7F7F7;
+  //background-color: red;
+
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  border-bottom: solid 2px black;
+
+  .wrapDiv{
+
+    .name{
+      font-style: italic;
+    }
+  }
+}
+
+.editor{
+  //padding: 5px;
+  position: absolute;
+  margin-left: -365px;
+  width: 350px;
+  border: solid 1px black;
+
+  h1{
+    text-align: center;
+    padding: 10px;
+  }
+
+  //margin-top: 50px;
+}
+
+.container{
+  //float: right;
+}
+
+main {
+  //@include center;
+  //float: right;
+  //padding-top: 30px;
+  width: 960px;
+  font-size: 1.8em;
+  margin-left: 390px;
+  //position: absolute;
+
+}
+
+.glyphicon-chevron-up, .glyphicon-chevron-down{
+  float: right;
+
+}
+
+.glyphicon-remove{
+  float: right;
+    margin-right: 20px;
+    color: red;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+.name{
+  font-size: 0.75em;
+  float: left;
+
+}
+
+.nameColl{
+  font-family: 'Mayonaise';
+  font-size: 1.5em;
+  //margin-bottom: 25px;
+}
+
+.wrapDiv{
+  audio{
+    margin-top: 15px;
+  }
+}
+
+.value{
+  margin-right: 5px;
+  //position: absolute;
+  color: blue;
+  float: right;
+  margin-top: -35px;
+}
+
+canvas{
+  border: solid 1px #B7DFE5;
+}
+
+
+.ui-slider-horizontal .ui-slider-handle{
+  height: 20px;
+  background-color: grey;
+  border: none;
+}
+
+.param{
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 125px;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  border: none;
+}
+
+#cnvs{
+	background-color: lightblue;
+
+}
+
+#range{
+	width: 350px;
+	margin-top: 50px;
+	margin-left: 55px;
+}
+
