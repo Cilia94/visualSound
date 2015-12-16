@@ -10,7 +10,7 @@
     "development": "webpack --watch & npm run serve",
     "production": "webpack -d -p",
     "start": "forever --minUptime 1000 --spinSleepTime 1000 .",
-    "serve": "nodemon .",
+    "serve": "nodemon ."
   },  
   "devDependencies": {
     "array.from": "^0.2.0",
